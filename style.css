@@ -109,7 +109,6 @@ body {
     }
 
     .grid{
-        background-color: red;
         display: grid;
         grid-template-columns: repeat(4, 50px);
         grid-gap: 10px;
