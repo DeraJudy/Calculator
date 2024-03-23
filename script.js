@@ -1,51 +1,3 @@
-// let lastClickedType = null;
-// let lastClickedOperator = null;
-
-// // Function to handle number button clicks
-// function handleNumberClick(button) {
-//     var textArea = document.getElementById("displayText");
-//     button.addEventListener('click', function() {
-//         // Append the clicked number to the textarea
-//         textArea.value += button.innerText;
-//         lastClickedType = 'number'; // Update lastClickedType
-//     });
-// }
-
-// // Function to handle operator button clicks
-// function handleOperatorClick(button) {
-//     var textArea = document.getElementById("displayText");
-//     button.addEventListener('click', function() {
-//         if (lastClickedType === 'number' || lastClickedType === 'brackets') {
-//             // Append the clicked operator to the textarea
-//             textArea.value += " " + button.innerText + " ";
-//             lastClickedOperator = button.innerText;
-//             lastClickedType = 'operator'; // Update lastClickedType
-//         } else {
-//             alert("Invalid Format: Please enter a number first.");
-//         }
-//     });
-// }
-
-// // Add event listeners to number buttons
-// document.querySelectorAll('.number').forEach(button => {
-//     handleNumberClick(button);
-// });
-
-// // Add event listeners to operator buttons
-// document.querySelectorAll('.operations').forEach(button => {
-//     handleOperatorClick(button);
-// });
-
-// // Add event listener to equals button to calculate result
-// document.getElementById("equals").addEventListener('click', function() {
-//     var textArea = document.getElementById("displayText");
-//     var expression = textArea.value.trim();
-//     var result = eval(expression); // Evaluate the expression to calculate the result
-//     textArea.value = expression + " = " + result; // Display the equation and result in the textarea
-// });
-
-
-
 let lastClickedBracket = null;
 let lastClickedType = null;
 let FirstClickedType = null;
@@ -160,15 +112,6 @@ document.querySelectorAll('.plusMinus').forEach(button => {
     });
 });
 
-
-// Add event listener to equals button to calculate result
-// document.getElementById("equals").addEventListener('click', function() {
-//     var textArea = document.getElementById("displayText");
-//     var expression = textArea.value.trim();
-//     var result = eval(expression); // Evaluate the expression to calculate the result
-//     textArea.value = expression + " = " + result; // Display the equation and result in the textarea
-// });
-
 // Add event listener to equals button to calculate result
 document.getElementById("equals").addEventListener('click', function() {
     var textArea = document.getElementById("displayText");
@@ -193,45 +136,5 @@ document.getElementById("refreshButton").addEventListener('click', function() {
 
 
 
-
-
-// My code
-// document.querySelectorAll('.number').forEach(button => {
-//     button.addEventListener('click', function() {
-//         var textArea = document.getElementById("displayText");
-//         textArea.value += this.innerText;
-//     });
-// });
-
-// document.querySelectorAll('.operations').forEach(button => {
-//     button.addEventListener('click', function() {
-//         var textArea = document.getElementById("displayText");
-//         textArea.value += " " + this.innerText + " ";
-//     });
-// });
-
-
-// document.querySelectorAll('.percentage').forEach(button => {
-//     button.addEventListener('click', function() {
-//         var textArea = document.getElementById("displayText");
-//         textArea.value += this.innerText;
-//     });
-// });
-
-// document.querySelectorAll('.cancel').forEach(button => {
-//     button.addEventListener('click', function() {
-//         var textArea = document.getElementById("displayText");
-//         textArea.value = ""; // Clearing the textarea content
-        
-//     });
-// });
-
-// document.querySelectorAll('.brackets').forEach(button => {
-//     button.addEventListener('click', function() {
-//         var textArea = document.getElementById("displayText");
-//         textArea.value = "("; // Clearing the textarea content
-        
-//     });
-// });
 
 
