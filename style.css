@@ -71,12 +71,12 @@ body {
     cursor: pointer;
 }
 
-.number{
+.number, .plusMinus{
     color: var(--White);
     background-color: #111;
 }
 
-.operations, .percentage, .brackets{
+.operations, .percentage, .brackets, .multiply{
     color: var(--NormalGreen);
     background-color: var(--Lightblack);
 }
