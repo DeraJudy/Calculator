@@ -181,8 +181,14 @@ document.getElementById("equals").addEventListener('click', function() {
         var result = eval(expression); // Evaluate the corrected expression to calculate the result
         textArea.value = expression + " = " + result; // Display the corrected equation and result in the textarea
     } catch (error) {
-        textArea.value = "Do another calculation"; // Display an error message if the expression is invalid
+        textArea.value = ""; // Display an error message if the expression is invalid
     }
+});
+
+// Add event listener to the refresh button
+document.getElementById("refreshButton").addEventListener('click', function() {
+    // Reload the page
+    location.reload();
 });
 
 

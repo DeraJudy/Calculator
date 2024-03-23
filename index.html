@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -16,7 +17,9 @@
 
         <div class="grid">
             <button class="cancel">C</button>
-            <button class="brackets">()</button>
+            <button class="reload-btn" id="refreshButton">
+                <i class="fas fa-sync"></i>
+            </button>
             <button class="percentage">%</button>
             <button class="operations">/</button>
             <button class="number" id="numbers">7</button>
@@ -31,10 +34,11 @@
             <button class="number">2</button>
             <button class="number">3</button>
             <button class="operations">+</button>
-            <button class="plusMinus">+/-</button>
+            <!-- <button class="plusMinus">+/-</button> -->
             <button class="number">0</button>
             <button class="number">.</button>
             <button class="equals" id="equals">=</button>
+            <button class="brackets">()</button>
         </div>
     </div>
 

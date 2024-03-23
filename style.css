@@ -81,16 +81,6 @@ body {
     background-color: var(--Lightblack);
 }
 
-/* .percentage{
-    color: var(--NormalGreen);
-    background-color: var(--Lightblack);
-}
-
-.operations{
-    color: var(--NormalGreen);
-    background-color: var(--Lightblack);
-} */
-
 .cancel{
     color: var(--Red);
     background-color: var(--Lightblack);
@@ -99,6 +89,13 @@ body {
 .equals{
     color: var(--White);
     background-color: var(--NormalGreen);
+}
+
+.reload-btn {
+    padding: 10px;
+    font-size: 18px;
+    color: var(--Red);
+    background-color: var(--Lightblack);
 }
 
 @media (max-width: 340px){
